@@ -8,7 +8,7 @@ baseWidth     = 100;
 baseThick     = 3;
 ridgeThick    = 5;
 
-droneColor    = [0, .75, 0, 1];
+droneColor    = [0, .75, 0, 1]; // Green
     
 armLength     = 160;
 armWidth      = 30;
@@ -22,10 +22,11 @@ legHeight     = 30;
 
 main();
 
+// Code
+
 module main() {
-        union() 
-        {
-    color(droneColor) {
+    union() {
+        color(droneColor) {
 
             base();
             // Arms
@@ -42,9 +43,6 @@ module main() {
         }    
     }
 }
-//
-
-// Code
 
 module base() 
 {
